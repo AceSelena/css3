@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>结构伪类选择器</title>
+  <style type="text/css">
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .clearfix {
+      clear: both;
+      overflow: auto;
+    }
+
+    .demo {
+      border: 1px solid gray;
+      width: 300px;
+      margin: 50px auto;
+      padding: 10px;
+    }
+
+    .demo li {
+      float: left;
+      list-style: none;
+      padding: 2px;
+      border: 1px solid gray;
+      margin-right: 4px;
+      width: 20px;
+      height: 20px;
+    }
+
+    .demo a {
+      display: block;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      border-radius: 10px;
+      background-color: #ff3366;
+      text-decoration: none;
+    }
+
+    .demo li:first-child {
+      background-color: green;
+    }
+
+    .demo li:nth-child(3) {
+      background-color: green;
+    }
+
+    /*偶数行换色 2n or even*/
+    .demo li:nth-child(even) {
+      background-color: yellow;
+    }
+
+    /*奇数行换色 2n+1 or odd */
+    .demo li:nth-child(odd) {
+      background-color: green;
+    }
+
+    /*.demo li:last-child {*/
+      /*background-color: green;*/
+    /*}*/
+
+    /*第五个之后n+5 */
+    .demo li:nth-child(n+5) {
+      background-color: blue;
+    }
+
+    /*倒数变色*/
+    .demo li:nth-last-child(3) {
+      background-color: blue;
+    }
+
+    /*限制了必须是li， nth-child不限制是li*/
+    .demo li:nth-of-type(3) {
+
+    }
+
+    .demo li:first-of-type {
+
+    }
+    .demo li:last-of-type {
+
+    }
+
+    /*唯一元素才有效*/
+    .demo li:only-child {
+      background: purple;
+    }
+
+    .demo li:only-of-type {
+      background: purple;
+    }
+
+    /*无元素才有效*/
+    .demo li:empty {
+      background: purple;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="demo clearfix">
+    <ul class="clearfix">
+      <!--<p>0</p>-->
+      <li><a href="">1</a></li>
+      <li><a href="">2</a></li>
+      <li><a href="">3</a></li>
+      <li><a href="">4</a></li>
+      <li><a href="">5</a></li>
+      <li><a href="">6</a></li>
+      <li><a href="">7</a></li>
+      <li><a href="">8</a></li>
+      <li><a href="">9</a></li>
+      <li><a href="">10</a></li>
+    </ul>
+  </div>
+
+  <div class="demo clearfix">
+    <ul class="clearfix">
+      <li><a href="">1</a></li>
+    </ul>
+  </div>
+
+
+  <div class="demo clearfix">
+    <ul class="clearfix">
+      <li></li>
+    </ul>
+  </div>
+</body>
+</html>
