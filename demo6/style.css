@@ -1,0 +1,11 @@
+.demo {
+    /*border: 50px solid gray;*/
+    border-top: 50px solid transparent;
+    /*往右三角形则把左边设为#00f*/
+    border-left: 0 solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 50px solid #00f;
+    width: 0;
+    height: 0;
+    margin: 50px auto;
+}

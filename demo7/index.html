@@ -5,9 +5,35 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>transform</title>
+  <style type="text/css">
+    .diamond {
+      width: 200px;
+      height: 200px;
+      background-color: #6a6;
+      margin: 100px auto;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    .parallelogram {
+      width: 200px;
+      height: 200px;
+      background-color: #6a6;
+      margin: 100px auto;
+      -webkit-transform: skew(20deg, 30deg);
+      -moz-transform: skew(20deg, 30deg);
+      -ms-transform: skew(20deg, 30deg);
+      -o-transform: skew(20deg, 30deg);
+      transform: skew(20deg, 30deg);
+    }
+  </style>
+
 </head>
 <body>
-
+  <div class="diamond"></div>
+  <div class="parallelogram"></div>
 </body>
 </html>

@@ -5,9 +5,59 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>border-radius</title>
+  <style type="text/css">
+    .demo {
+      width: 200px;
+      height: 200px;
+      border: 1px solid gray;
+      background-color: #F36;
+      margin: 50px auto;
+      /*border-radius: 50%;*/
+
+      /*border-top-left-radius: 50%;*/
+      /*border-top-right-radius: 50%;*/
+      /*border-bottom-left-radius: 50%;*/
+      /*border-bottom-right-radius: 50%;*/
+
+      /*border-radius: 100px 100px 100px 100px;*/
+
+      /*--x y 轴*/
+      border-top-left-radius: 100px 50px;
+
+    }
+    .demo1 {
+      width: 100px;
+      height: 200px;
+      border: 1px solid gray;
+      background-color: #F36;
+      margin: 50px auto;
+
+      border-radius: 100px 0 0 100px;
+    }
+
+    .demo2 {
+      width: 200px;
+      height: 100px;
+      border: 1px solid gray;
+      background-color: #F36;
+      margin: 50px auto;
+
+      border-radius: 100px 100px 0 0;
+    }
+  </style>
 </head>
 <body>
+  <div class="demo">
 
+  </div>
+
+  <div class="demo1">
+
+  </div>
+
+  <div class="demo2">
+
+  </div>
 </body>
 </html>

@@ -5,9 +5,63 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>star</title>
+  <style type="text/css">
+    #star {
+      width: 0;
+      height: 0;
+      margin: 150px auto;
+      border-bottom: 70px solid red;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-top: 0px solid transparent;
+      -webkit-transform: rotate(35deg);
+      -moz-transform: rotate(35deg);
+      -ms-transform: rotate(35deg);
+      -o-transform: rotate(35deg);
+      transform: rotate(35deg);
+      position: relative;
+    }
+
+    #star::before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-bottom: 80px solid red;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-top: 0px solid transparent;
+      position: absolute;
+      top: -45px;
+      left: -65px;
+      -webkit-transform: rotate(-35deg);
+      -moz-transform: rotate(-35deg);
+      -ms-transform: rotate(-35deg);
+      -o-transform: rotate(-35deg);
+      transform: rotate(-35deg);
+    }
+
+    #star::after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-bottom: 70px solid red;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-top: 0px solid transparent;
+      position: absolute;
+      top: -3px;
+      left: -105px;
+      -webkit-transform: rotate(-70deg);
+      -moz-transform: rotate(-70deg);
+      -ms-transform: rotate(-70deg);
+      -o-transform: rotate(-70deg);
+      transform: rotate(-70deg);
+    }
+  </style>
+
 </head>
 <body>
-
+  <div id="star"></div>
 </body>
 </html>
