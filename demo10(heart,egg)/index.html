@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style type="text/css">
+    #heart {
+      width: 100px;
+      height: 90px;
+      position: relative;
+      margin: 100px auto;
+      /*background-color: yellow;*/
+    }
+    #heart::before {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 80px;
+      background-color: red;
+      border-radius: 50px 50px 0 0;
+      -webkit-transform-origin: 0 100%;
+      -moz-transform-origin: 0 100%;
+      -ms-transform-origin: 0 100%;
+      -o-transform-origin: 0 100%;
+      transform-origin: 0 100%;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      left: 50px;
+    }
+    #heart::after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 80px;
+      background-color: red;
+      border-radius: 50px 50px 0 0;
+      -webkit-transform-origin: 0 100%;
+      -moz-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+      -o-transform-origin: 100% 100%;
+      transform-origin: 100% 100%;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    #egg {
+      width: 126px;
+      height: 180px;
+      background-color: #FA3;
+      margin: 100px auto;
+
+      /*X轴四个角与Y轴四个角*/
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    }
+  </style>
+
+</head>
+<body>
+  <div id="heart"></div>
+  <div id="egg"></div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style type="text/css">
+    #square {
+      width: 50px;
+      height: 50px;
+      border-top: 50px solid #F00;
+      border-left: 50px solid #0F0;
+      border-right: 50px solid #00F;
+      border-bottom: 50px solid #FF0;
+    }
+
+    #wubian {
+      margin: 100px auto;
+      width: 54px;
+      height: 0;
+      border-top: 50px solid red;
+      border-left: 18px solid transparent;
+      border-right: 18px solid transparent;
+      position: relative;
+    }
+
+    #wubian::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-bottom: 35px solid red;
+      border-left: 45px solid transparent;
+      border-right: 45px solid transparent;
+      top: -85px;
+      left: -18px;
+
+    }
+
+    #six {
+      margin: 100px auto;
+      width: 100px;
+      height: 55px;
+      background-color: red;
+      position: relative;
+    }
+
+    #six::before {
+      content: '';
+      position: absolute;
+      top: -25px;
+      width: 0;
+      height: 0;
+      border-bottom: 25px solid red;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+    }
+
+    #six::after {
+      content: '';
+      position: absolute;
+      top: 55px;
+      width: 0;
+      height: 0;
+      border-top: 25px solid red;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+    }
+  </style>
+
+</head>
+<body>
+  <div id="square"></div>
+  <div id="wubian"></div>
+  <div id="six"></div>
+</body>
+</html>
