@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>仿天猫产品展示效果</title>
+  <style type="text/css">
+    body {
+      background-color: #ddd;
+    }
+   #main {
+     margin: 100px auto;
+     width: 800px;
+     clear: both;
+   }
+   #main li {
+     background-color: white;
+     list-style: none;
+     width: 240px;
+     padding: 1px;
+     border: 1px solid rgba(255,0,0,0);
+     cursor: pointer;
+     float: left;
+     margin: 3px;
+   }
+   #main li:hover {
+    border: 1px solid rgba(255,0,0,1);
+   }
+   #main li:hover .img img {
+     opacity: 0.7;
+   }
+   .img img {
+    width: 240px;
+    transition: all .6s;
+   }
+   .goods_title {
+     margin: 10px;
+     color:#666;
+     height: 40px;
+     overflow: hidden;
+   }
+   .price {
+     margin: 10px;
+     color:#F00;
+   }
+  </style>
+</head>
+<body>
+   <div id="main">
+     <ul>
+       <li>
+         <div class="img">
+           <img src="./bg.png" alt="">
+         </div>
+         <div class="goods_title">
+          更强更强更强更强更强更强更强
+          更强更强更强更强更强更强更强
+         </div>
+         <div class="price">
+            ￥499
+         </div>
+       </li>
+
+       <li>
+        <div class="img">
+          <img src="./bg.png" alt="">
+        </div>
+        <div class="goods_title">
+         更强更强更强更强更强更强更强
+         更强更强更强更强更强更强更强
+        </div>
+        <div class="price">
+           ￥199
+        </div>
+      </li>
+     </ul>
+   </div>
+</body>
+</html>
