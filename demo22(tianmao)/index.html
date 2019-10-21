@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>仿天猫类别过渡效果</title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Microsoft YaHei';
+    }
+    .main {
+      width: 260px;
+      height: 270px;
+      border: 1px solid #ccc;
+      margin: 50px auto;
+      cursor: pointer;
+    }
+    .main:hover img {
+      right: 15px;
+    }
+    .main-title {
+      text-align: left;
+      font-size: 20px;
+      padding: 20px 10px 10px 10px;
+    }
+    .main-content {
+      color: #11ccaa;
+      padding: 0 10px 10px 10px;
+    }
+    .main-img {
+      text-align: right;
+      position: relative;
+    }
+    .main-img img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 180px;
+      transition: right .3s;
+    }
+  </style>
+</head>
+<body>
+<div class="main">
+  <div class="main-title">
+    XXX一口价
+  </div>
+  <div class="main-content">
+    XXX一口价
+  </div>
+  <div class="main-img">
+    <img src="3.png" alt="">
+  </div>
+</div>
+</body>
+</html>
