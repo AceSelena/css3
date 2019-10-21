@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style type="text/css">
+    .ceng {
+      top: 300px;
+      left: 300px;
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      cursor: pointer;
+      transition-duration: 2s;
+      transition-property: all;
+      transition-delay: .2s;
+      /*先慢后快再慢ease==ease-in-out*/
+      /*匀速linear*/
+      /*先慢后快ease-in*/
+      /*先快后满ease-out*/
+      /*直接变换step-start*/
+      /*最后时间过后（2s）直接变换step-end*/
+      /*曲线cubic-bezier*/
+      transition-timing-function: cubic-bezier(.39,.58,.92,.46);
+      /*transition: all 2s 0.2s ease;*/
+    }
+    .ceng:hover {
+      width: 300px;
+      height: 150px;
+      background-color: red;
+      border-radius: 40px;
+    }
+  </style>
+</head>
+<body>
+<div class="ceng"></div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    #inner{
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background:blue;
+      margin-left: 100px;
+      margin-top: 100px;
+      transition:0.5s all cubic-bezier(0.14,-1.33,1,0.18);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="ceng"></div>
+  <button onclick="run1()">开始</button>
+  <div id="box">
+    <div id="inner"></div>
+  </div>
+</body>
+</html>
+
+
+<script type="text/javascript">
+    function run1(){
+        var obj =document.getElementById("box");
+        obj.style.transition="all 0.5s cubic-bezier(0,0,0,0)";
+        obj.style.transform="translateX(100px)";
+        var inner =document.getElementById("inner");
+        inner.style.transform="translateY(100px)";
+    }
+</script>
